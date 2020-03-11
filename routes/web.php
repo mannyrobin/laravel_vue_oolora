@@ -26,8 +26,6 @@ Route::domain('{domain}')->group(function () {
 
 
 Route::get('/', 'FrontendController@index');
-Route::get('/{slug}', 'PreviewDomainController');
-
 Route::get('test', 'FrontendController@test');
 Route::get('features', 'FrontendController@features');
 
