@@ -1,0 +1,45 @@
+// Typography fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:600,700');
+
+
+// AppKit Variable Overrides
+@import "~appkit/style/functions";
+@import "~appkit/style/variables";
+
+
+// Custom Variables Override
+@import 'variables';
+
+
+// Bootstrap variables and mixins
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+
+// AppKit Mixin Override
+@import "~appkit/style/partials/mixins";
+
+
+// AppKit Files
+@import '~appkit/style/base';
+
+
+
+// Custom App Components
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    border-color: #ffffff #ffffff #ffffff;
+    border-bottom: 2px solid $primary !important;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    border-color: #ffffff #ffffff $primary !important;
+    border-bottom-width: 2px;
+}
+
+
+.jvectormap-container {
+height:100%;
+width:100%;
+}
