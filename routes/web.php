@@ -13,10 +13,7 @@
 
 
 // Custom domain
-Route::domain('{domain}')->group(function ($domain) {
-	print $domain;
-	
-	exit;
+Route::domain('{domain}')->group(function () {
 
 	// Redirect any request without the slug to the main domain
 	Route::redirect('/', config('app.url'));
